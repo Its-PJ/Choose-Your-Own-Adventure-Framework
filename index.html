@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose your own adventure</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+
+<body>
+    
+<div id="game-container">
+
+  <div id="story" class="step">
+
+    <h1>The Mysterious Cave</h1>
+
+    <!-- <p>Welcome to the game!</p> -->
+
+    <p>Once upon a time, in a small village nestled in the mountains, lived a curious young adventurer named Alex. 
+      One sunny morning, Alex stumbled upon an old map that led to a mysterious cave. 
+      Eager to uncover its secrets, Alex embarked on an exciting journey.</p>
+
+      <p>As Alex approached the entrance of the cave, two paths emerged. One was a well-trodden trail, while the other was overgrown with thick foliage.</p>
+
+      <p>Which path will Alex choose?</p>
+
+    <button id="option2a">Take the well-trodden trail.</button>
+    <button id="option2b">Push through the thick foliage.</button>
+  </div>
+
+  <div id="option2a-result" class="step">
+
+    <!-- Prompt 2a: The Well-Trodden Trail -->
+    <h1>The Well-Trodden Trail</h1>
+
+    <p>Alex decided to take the well-trodden trail. 
+      The path wound deeper into the cave, and soon, a faint glimmer of light caught Alex's attention. 
+      It led to an underground river.</p>
+
+    <p>What should Alex do next?</p>
+
+    <button id="option3a">Follow the river downstream.</button>
+    <button id="option3b">Investigate a side passage.</button>
+
+  </div>
+
+  <div id="option2b-result" class="step">
+
+    <!-- Prompt 2b: Pushing Through the Thick Foliage -->
+    <h1>Pushing Through the Thick Foliage</h1>
+
+    <p>With determination, Alex pushed through the thick foliage, uncovering a hidden path. 
+      The path twisted and turned until reaching a small opening that revealed a breathtaking underground lake.</p>
+
+    <p>What should Alex do next?</p>
+
+    <button id="option3c">Dive into the lake.</button>
+    <button id="option3d">Search the surroundings for clues.</button>
+
+  </div>
+
+
+  <div id="option3a-result" class="step">
+
+    <!-- Prompt 3a: Following the River Downstream -->
+    <h1>Following the River Downstream</h1>
+
+    <p>Alex followed the river downstream, and as the sound of rushing water grew louder, a magnificent waterfall came into view. 
+      The waterfall sparkled with an otherworldly glow, tempting Alex to explore further.</p>
+
+    <p>What should Alex do next?</p>
+
+    <button id="option4a">Climb up the waterfall.</button>
+    <button id="option4b">Swim behind the waterfall.</button>
+
+  </div>
+
+
+  <div id="option3b-result" class="step">
+
+    <!-- Prompt 3b: Investigating a Side Passage-->
+    <h1>Investigating a Side Passage</h1>
+
+    <p>Curiosity led Alex to investigate the side passage. The walls were adorned with ancient engravings, 
+      depicting a hidden treasure rumored to lie deeper within the cave.</p>
+
+    <p>What should Alex do next?</p>
+
+    <button id="option4c">Continue along the side passage.</button>
+    <button id="option4d">Return to the main path.</button>
+
+  </div>
+
+
+
+  <div id="option3c-result" class="step">
+
+    <!-- Prompt 3c: Diving into the Lake-->
+    <h1>Diving into the Lake</h1>
+
+    <p>Without hesitation, Alex dove into the underground lake. 
+      The water was refreshingly cool, and upon resurfacing, Alex noticed a shimmering object on a small island in the middle of the lake.</p>
+
+    <p>What should Alex do next?</p>
+
+    <button id="option4e">Swim to the island.</button>
+    <button id="option4f">Explore the lake's depths.</button>
+
+  </div>
+
+
+
+  <div id="option3d-result" class="step">
+
+    <!-- Prompt 3d: Searching the Surroundings for Clues-->
+    <h1>Searching the Surroundings for Clues</h1>
+
+    <p>Alex searched the surroundings, meticulously examining the area for clues. 
+      Among the rocks, Alex discovered a peculiar key hidden in a crevice.</p>
+
+    <p>What should Alex do next?</p>
+
+    <button id="option4g">Proceed further into the cave with the key.</button>
+    <button id="option4h">Return to the village and seek advice about the key.</button>
+
+  </div>
+
+  <div id="option4a-result" class="step">
+
+    <!-- Prompt 4a: Climbing Up the Waterfall-->
+    <h1>Climbing Up the Waterfall</h1>
+
+    <p>With great determination, Alex started climbing the slippery rocks of the waterfall. 
+      It was a challenging ascent, but upon reaching the top, Alex found a hidden chamber filled with ancient artifacts.</p>
+
+    <h2>The End</h2>
+
+    <p>Alex uncovers the secrets of the cave and becomes a renowned archaeologist, sharing the knowledge with the world.</p>
+
+    <button id="continue">Continue</button>
+
+  </div>
+
+  <div id="option4b-result" class="step">
+
+    <!-- Prompt 4b: Swimming Behind the Waterfall-->
+    <h1>Swimming Behind the Waterfall</h1>
+
+    <p>Curiosity led Alex to swim behind the waterfall. Beyond the cascading water, 
+      a hidden cavern opened up—a magical sanctuary filled with glowing crystals and enchanting plants.</p>
+
+    <h2>The End</h2>
+
+    <p>Alex decides to keep the secret of the hidden cavern, returning periodically to find solace in its beauty.</p>
+
+    <button id="continue">Continue</button>
+
+  </div>
+
+
+  <div id="option4c-result" class="step">
+
+    <!-- Prompt 4c: Continuing Along the Side Passage-->
+    <h1>Continuing Along the Side Passage</h1>
+
+    <p>Eager to discover the hidden treasure, Alex pressed on along the side passage. 
+      The path grew narrower, and eventually, it led to a small chamber with a chest resting in the center.</p>
+
+    <h2>The End</h2>
+
+    <p>Alex unlocks the chest, revealing a priceless treasure that brings prosperity to the village and sets off on further adventures.</p>
+
+    <button id="continue">Continue</button>
+
+  </div>
+
+
+  <div id="option4d-result" class="step">
+
+    <!-- Prompt 4d: Returning to the Main Path-->
+    <h1>Returning to the Main Path</h1>
+
+    <p>Feeling uncertain about the side passage, Alex decided to return to the main path. 
+      The cave's depths remained unexplored, leaving the mysteries within a secret.</p>
+
+    <h2>The End</h2>
+
+    <p>Alex returns to the village, forever wondering about the untold secrets that lay hidden in the cave.</p>
+
+    <button id="continue">Continue</button>
+
+  </div>
+
+
+  <div id="option4e-result" class="step">
+
+    <!-- Prompt 4e: Swimming to the Island-->
+    <h1>Swimming to the Island</h1>
+
+    <p>Alex swam with determination to reach the island in the middle of the lake. 
+      Upon arrival, a gleaming golden artifact greeted Alex—a symbol of great power.</p>
+
+    <h2>The End</h2>
+
+    <p>Alex becomes a legendary hero, using the power of the artifact to protect the village and embark on heroic quests.</p>
+
+    <button id="continue">Continue</button>
+
+  </div>
+
+
+  <div id="option4f-result" class="step">
+
+    <!-- Prompt 4f: Exploring the Lake's Depths-->
+    <h1>Exploring the Lake's Depths</h1>
+
+    <p>Driven by curiosity, Alex decided to explore the lake's depths. 
+      As Alex descended deeper into the water, a mystical creature emerged, offering guidance and wisdom.</p>
+
+    <h2>The End</h2>
+
+    <p>Alex becomes a respected scholar, sharing the wisdom gained from the mystical creature with the world.</p>
+
+    <button id="continue">Continue</button>
+
+  </div>
+
+
+  <div id="option4g-result" class="step">
+
+    <!-- Prompt 4g: Proceeding Further with the Key-->
+    <h1>Proceeding Further with the Key</h1>
+
+    <p>Armed with the mysterious key, Alex proceeded deeper into the cave. 
+      The key fit perfectly into a hidden lock, revealing a secret passage leading to an ancient temple</p>
+
+    <h2>The End</h2>
+
+    <p>Alex's bravery and resourcefulness save the village from a hidden danger lurking within the temple.</p>
+
+    <button id="continue">Continue</button>
+
+  </div>
+
+
+  <div id="option4h-result" class="step">
+
+    <!-- Prompt 4h: Proceeding Further with the Key-->
+    <h1>Proceeding Further with the Key</h1>
+
+    <p>Doubtful about the key's purpose, Alex returned to the village seeking advice.
+       The village elder recognized the key and revealed its significance—a key to a legendary treasure hidden in the cave.</p>
+
+    <h2>The End</h2>
+
+    <p>Alex assembles a team of adventurers from the village, embarking on a grand quest to find the legendary treasure and bring prosperity to the village.</p>
+
+    <button id="continue">Continue</button>
+
+  </div>
+
+
+  <div id="credits-page" class="finale">
+
+    <h1>Thanks for Playing this Demo!</h1>
+    <h2>Story written by ChatGPT</h2>
+    
+  </div>
+
+
+
+
+
+</div>
+
+<script src="game.js"></script>
+
+</body>
+
+
+</html>

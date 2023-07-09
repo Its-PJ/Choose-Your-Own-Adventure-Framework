@@ -1,0 +1,46 @@
+#game-container {
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+.step {
+    display: none;
+}
+  
+.step:first-child {
+    display: block;
+}
+
+.finale{
+  display: none;
+}
+
+/* #credits-page {
+  display: none;
+} */
+
+/* #option1{
+  background-color: #615f47; 
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#option2{
+  background-color: #615f47; 
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+} */
+  
